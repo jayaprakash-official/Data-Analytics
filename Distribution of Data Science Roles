@@ -1,0 +1,14 @@
+Exp No:1.b    Analyze and visualize the distribution of various data science roles (Data Analyst, Data Engineer, Data Scientist, etc.) from a dataset.
+Description: Use a dataset of job postings and categorize them into different roles. Visualize the distribution using pie charts or bar plots.
+
+
+Code:
+
+roles = ['Data Analyst', 'Data Engineer', 'Data Scientist', 'ML Engineer', 'Business Analyst']
+counts = [300, 500, 450, 200, 150]
+plt.bar(roles, counts)
+plt.title('Distribution of Data Science Roles')
+plt.xlabel('Role')
+plt.ylabel('Count')
+plt.show()
+
