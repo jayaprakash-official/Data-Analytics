@@ -1,0 +1,16 @@
+Exp No:1.a     Analyze the trend of data science job postings over the last decade                                   
+
+Description: Use web scraping (e.g., BeautifulSoup) or APIs (e.g., LinkedIn API) to gather data on the number of data science job postings each year. Use pandas for data manipulation and matplotlib/seaborn for visualization.
+
+Code:
+import pandas as pd
+import matplotlib.pyplot as plt
+data = {'Year': list(range(2010, 2021)),
+        'Job Postings': [150, 300, 450, 600, 800, 1200, 1600, 2100, 2700, 3400, 4200]}
+
+df = pd.DataFrame(data)
+plt.plot(df['Year'], df['Job Postings'], marker='o')
+plt.title('Trend of Data Science Job Postings')
+plt.xlabel('Year')
+plt.ylabel('Number of Job Postings')
+plt.show()
